@@ -95,8 +95,15 @@
 
 <h3 id="Methodology"><a href="#Methodology" class="headerlink" title="Methodology"></a>Methodology</h3><p>I use K-Means, Spherical K-Means Algorithm and Gibs Sampling Algorithm to cluster the posts.</p>
 <p>####K-means</p>
-<ul><br>K-Means is the most popular algorithm in the cluster problem.It’s a good choice to start our project:<br><div align="center"><br><img src="/images/KmeansResult.jpg" alt="tfidfwithKmeans"><br>Figure7. K-Means Result<br>The posts may clustered the paitients into three level:<br><br>- Light:    help, year, life, know, many<br>- Mild:     pain, face, like, help, would<br>- Severe:   disease, suicide, suicide disease<br></div><br><br>The K-Means is good in unsupervised cluster, but the different length of Feature Vector will lead to a big distance.<br>Adam:   TN disease makes me pain on face.<br>Bob:    I feel suicide pain on my face since I have TN.<br>Two Post have the same meanings:<br>But the Feature Vector of them are:<br>Name    |pain |face|suicide |feel |<br>——–|—–|—-|——–|—–|<br>Adam    | 0.01|0.01|0       |0    |<br>Bob     | 0.01|0.01|0.005   |0.005|<br><br>It’s apparently the distance of Euclidean Distance depends on the length of Posts.<br>So there’s another algorithm called Spherical-Kmeans to solove this problem.<br><ul><br>Spherical K-Means uses Cosine Similarity instead of Euclidean distance. You can imagine the cosine similarity as the Angel distance.<br><div align="center"><br><img src="/images/SphericalKmeansResult.jpg" alt="tfidfwithSphKmeans"><br>Figure8. Spherical K-Means Result<br></div><br>From the figure above we find that the Spherical have a good perforamnce. Each cluster has distinguish key-word-vector. But when the<br><br></ul>
-</ul>
+<p><ul><br>K-Means is the most popular algorithm in the cluster problem.It’s a good choice to start our project:</ul></p>
+<div align="center"><br><img src="/images/KmeansResult.jpg" alt="tfidfwithKmeans"><br>Figure7. K-Means Result<br>The posts may clustered the paitients into three level:<br><br>- Light:    help, year, life, know, many<br>- Mild:     pain, face, like, help, would<br>- Severe:   disease, suicide, suicide disease<br></div>
+
+<p>The K-Means is good in unsupervised cluster, but the different length of Feature Vector will lead to a big distance.<br>Adam:   TN disease makes me pain on face.<br>Bob:    I feel suicide pain on my face since I have TN.<br>Two Post have the same meanings:<br>But the Feature Vector of them are:<br>Name    |pain |face|suicide |feel |<br>——–|—–|—-|——–|—–|<br>Adam    | 0.01|0.01|0       |0    |<br>Bob     | 0.01|0.01|0.005   |0.005|</p>
+<p>It’s apparently the distance of Euclidean Distance depends on the length of Posts.<br>So there’s another algorithm called Spherical-Kmeans to solove this problem.<br>Spherical K-Means uses Cosine Similarity instead of Euclidean distance. You can imagine the cosine similarity as the Angel distance.</p>
+<p><div align="center"><br><img src="/images/SphericalKmeansResult.jpg" alt="tfidfwithSphKmeans"><br>Figure8. Spherical K-Means Result<br></div></p>
+<p><div align="center"><br><img src="/images/SphericalShapeClusters.jpg" alt="SphericalShape"><br>Figure8. Spherical K-Means Result fits the Spherical Shape<br></div><br>From the figure above we find that the Spherical have a good perforamnce. Each cluster has distinguish key-word-vector. But when the samples numbers is greater than 300. K-means and Spherical K-Means both don’t help the sparse matrix cluster.</p>
+<p>####GSDMM</p>
+
             </div>
 </article>
 
