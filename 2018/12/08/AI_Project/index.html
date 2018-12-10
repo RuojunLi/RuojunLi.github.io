@@ -75,7 +75,7 @@
                     <article class="post">
     
             <h2 class="post-title">
-                Hello World
+                AI Project 18 Fall
             </h2>
             <ul class="post-date">
                 <li>
@@ -86,12 +86,13 @@
                 </li>
             </ul>
             <div class="post-content">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+                <p>Welcome to AI Project Website. This Project focuses on the Trigeminal Neuralgia disease(TN) posters unsupervised Text Cluster.</p>
+<h2 id="Dataset"><a href="#Dataset" class="headerlink" title="Dataset"></a>Dataset</h2><h3 id="Source"><a href="#Source" class="headerlink" title="Source"></a>Source</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Facebook: 1708 posts</span><br><span class="line">Twitter: 9808 Tweets</span><br></pre></td></tr></table></figure>
+<h3 id="Data-Distribution"><a href="#Data-Distribution" class="headerlink" title="Data Distribution"></a>Data Distribution</h3><ul><br><div align="center"><br><img src="/images/Post_Distributtion.jpg" alt="post_distrbution"><br>Figure1. Post Distribution of Facebook<br></div><br><li>We face a <strong>short text cluster</strong> issue.</li><br><div align="center"><br><img src="/images/bagwords.png" alt="post_words"><br>Figure2. Words Distribution of Facebook<br></div><br><li> We face a <strong>high dimension</strong> issue.</li><br><div align="center"><br><img src="/images/tfidf_matrix.jpg" alt="post_words"><br>Figure3. TFIDF Sparse Matrix<br></div><br><li>We face a <strong>sparse</strong> issue.</li><br><br><strong>In conclusion, our dataset is a short,high dimension,sparse message posts</strong><br>From the paper “Yin, Jianhua and Jianyong Wang. “A dirichlet multinomial mixture model-based approach for short text clustering.” (<strong>GSDMM</strong>), the algorithm <strong>GSDMM</strong> is good choice to cluster short message such as tweets and Facebook posts.<br>More Info: <a href="http://dbgroup.cs.tsinghua.edu.cn/wangjy/papers/KDD14-GSDMM.pdf" target="_blank" rel="noopener">Paper</a><br></ul>
+
+
+<h3 id="TFIDF-Term-Freqency-and-Inverse-Document-Frequency"><a href="#TFIDF-Term-Freqency-and-Inverse-Document-Frequency" class="headerlink" title="TFIDF- Term Freqency and Inverse Document Frequency"></a>TFIDF- Term Freqency and Inverse Document Frequency</h3><p><div align="center"><br><img src="/images/tfidf_flow.png" alt="tfidf"><br>Figure4. Flow Chart of TFIDF<br></div></p>
+<p><ul><br>$x = a_{1}^n + a_{2}^n + a_{3}^n$<br>$Term Frequency = cfrac{\Sigma_k*n_(k,j)}{1}$<br></ul><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
